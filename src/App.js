@@ -1,12 +1,10 @@
 import "./App.css";
-import HirePage from "./Components/HirePage";
+// import HirePage from "./Components/HirePage";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HirePage />
-
         <iframe
           title="Niamos Calendar Test"
           class="airtable-embed"
@@ -21,14 +19,16 @@ function App() {
             margin: "20px 0",
           }}
         ></iframe>
+
+        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
         <iframe
           title="niamos air-table form"
-          class="airtable-embed"
+          class="airtable-embed airtable-dynamic-height"
           src="https://airtable.com/embed/shrIuwedIDcGea85v?backgroundColor=red"
           frameborder="0"
           onmousewheel=""
           width="100%"
-          height="533"
+          height="1356"
           style={{
             background: "transparent",
             border: "1px solid #ccc",
