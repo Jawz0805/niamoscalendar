@@ -1,22 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HirePage from "./Components/HirePage";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <HirePage />
+
+        <iframe
+          title="Niamos Calendar Test"
+          class="airtable-embed"
+          src="https://airtable.com/embed/shrft35fsnZgezEim?backgroundColor=red&viewControls=on"
+          frameborder="0"
+          onmousewheel=""
+          width="100%"
+          height="533"
+          style={{
+            background: "transparent",
+            border: "1px solid #ccc",
+            margin: "20px 0",
+          }}
+        ></iframe>
+        <iframe
+          title="niamos air-table form"
+          class="airtable-embed"
+          src="https://airtable.com/embed/shrIuwedIDcGea85v?backgroundColor=red"
+          frameborder="0"
+          onmousewheel=""
+          width="100%"
+          height="533"
+          style={{
+            background: "transparent",
+            border: "1px solid #ccc",
+            margin: "20px 0",
+          }}
+        ></iframe>
       </header>
     </div>
   );
